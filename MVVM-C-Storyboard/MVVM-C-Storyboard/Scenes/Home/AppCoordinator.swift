@@ -35,7 +35,7 @@ class AppCoordinator: Coordinator {
     func removeChildCoordinator(_ coordinator:  Coordinator) {
         guard let index = childCoordinators.firstIndex(
             where: { $0 === coordinator }) else {
-            print("Child coordinator not found!")
+            print("Child coordinator not found")
             return
         }
     }
