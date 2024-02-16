@@ -8,11 +8,25 @@
 import Foundation
 import UIKit
 
-protocol Coordinator: AnyObject {
+public protocol Coordinator: AnyObject {
     var childCoordinators: [Coordinator] {get set}
     func start()
-    func finish()
-    func addChildCoordinator(_ coordinator: Coordinator)
-    func removeChildCoordinator(_ coordinator:  Coordinator)
-    func removeAllChildCoordinators()
+    func navigateTo(to route: HomeRoute)
+}
+
+public extension Coordinator {
+    func finish(){}
+    
+    func addChildCoordinator(_ coordinator:  Coordinator) {
+        self.childCoordinators.append(coordinator)
+    }
+    
+    func removeChildCoordinator(_ coordinator:  Coordinator) {
+        guard let index = childCoordinators.firstIndex(
+            where: { $0 === coordinator }) else {
+            print("Child coordinator not found")
+            return
+        }
+    }
+    func removeAllChildCoordinators(){}
 }

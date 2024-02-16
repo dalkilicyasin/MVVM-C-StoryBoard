@@ -24,26 +24,6 @@ class AppCoordinator: Coordinator {
         navigationController.setViewControllers([controller], animated: false)
     }
     
-    func finish() {
-        
-    }
-    
-    func addChildCoordinator(_ coordinator:  Coordinator) {
-        self.childCoordinators.append(coordinator)
-    }
-    
-    func removeChildCoordinator(_ coordinator:  Coordinator) {
-        guard let index = childCoordinators.firstIndex(
-            where: { $0 === coordinator }) else {
-            print("Child coordinator not found")
-            return
-        }
-    }
-    
-    func removeAllChildCoordinators() {
-        
-    }
-    
     func navigateTo(to route: HomeRoute) {
         switch route {
             
