@@ -9,16 +9,16 @@ import Foundation
 import UIKit
 
 class HomeViewCoordinator: Coordinator {
-    func addChildCoordinator(_ coordinator: Coordinator) {
+    func addChildCoordinator(_ coordinator: any Coordinator) {
         //
     }
     
-    func removeChildCoordinator(_ coordinator: Coordinator) {
+    func removeChildCoordinator(_ coordinator: any Coordinator) {
         //
     }
     
     
-    var childCoordinators: [Coordinator] = []
+    var childCoordinators: [any Coordinator] = []
     
     let rootViewController: UITabBarController
     

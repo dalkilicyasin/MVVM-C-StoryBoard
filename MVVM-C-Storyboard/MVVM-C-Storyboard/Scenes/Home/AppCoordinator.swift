@@ -8,9 +8,14 @@
 import Foundation
 import UIKit
 
+public enum HomeRoute: BaseRoute {
+    case second
+    case third
+}
+
 class AppCoordinator: Coordinator {
-    
-    var childCoordinators: [ Coordinator] = []
+
+    var childCoordinators: [ any Coordinator] = []
     
     var navigationController: UINavigationController
    
@@ -26,14 +31,24 @@ class AppCoordinator: Coordinator {
     
     func navigateTo(to route: HomeRoute) {
         switch route {
-            
         case .second:
-            let viewController = SecondViewController.instantiate(name: .main)
-            navigationController.present(viewController, animated: true)
+            //let viewController = UserListViewController.instantiate(name: .main)
+            //navigationController.show(viewController, sender: nil)
+            let userList = UserListCoordinator(navigationController: self.navigationController)
+            userList.userListDelegate = self
+            addChildCoordinator(userList)
+            userList.start()
+            
         case .third:
             let viewController = ThirdViewController.instantiate(name: .main)
             navigationController.show(viewController, sender: nil)
         }
+    }
+}
+
+extension AppCoordinator: UserListDelegate {
+    func didFinish(from coordinator: UserListCoordinator) {
+        removeChildCoordinator(coordinator)
     }
 }
 

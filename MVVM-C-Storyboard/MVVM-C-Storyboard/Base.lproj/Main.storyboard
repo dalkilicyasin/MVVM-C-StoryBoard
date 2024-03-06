@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="820.61068702290072" y="3.5211267605633805"/>
         </scene>
-        <!--Second View Controller-->
+        <!--User List View Controller-->
         <scene sceneID="z2n-ZD-atT">
             <objects>
-                <viewController storyboardIdentifier="SecondViewController" id="S8S-Y2-UEd" customClass="SecondViewController" customModule="MVVM_C_Storyboard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserListViewController" id="S8S-Y2-UEd" customClass="UserListViewController" customModule="MVVM_C_Storyboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5BZ-3p-3Bg">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gNA-nw-EBD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1618" y="4"/>
+            <point key="canvasLocation" x="1720" y="-189"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Gwr-2o-Mcq">
@@ -120,7 +120,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L47-Xr-REZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2450" y="4"/>
+            <point key="canvasLocation" x="1720" y="513"/>
         </scene>
     </scenes>
     <resources>

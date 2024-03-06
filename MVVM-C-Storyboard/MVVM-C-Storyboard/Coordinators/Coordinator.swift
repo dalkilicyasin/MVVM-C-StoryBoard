@@ -8,20 +8,24 @@
 import Foundation
 import UIKit
 
+public protocol BaseRoute{
+}
+
 public protocol Coordinator: AnyObject {
-    var childCoordinators: [Coordinator] {get set}
+    associatedtype Route: BaseRoute
+    var childCoordinators: [any Coordinator] {get set}
     func start()
-    func navigateTo(to route: HomeRoute)
+    func navigateTo(to route: Route)
 }
 
 public extension Coordinator {
     func finish(){}
     
-    func addChildCoordinator(_ coordinator:  Coordinator) {
+    func addChildCoordinator(_ coordinator:  any Coordinator) {
         self.childCoordinators.append(coordinator)
     }
     
-    func removeChildCoordinator(_ coordinator:  Coordinator) {
+    func removeChildCoordinator(_ coordinator:  any Coordinator) {
         guard let index = childCoordinators.firstIndex(
             where: { $0 === coordinator }) else {
             print("Child coordinator not found")
