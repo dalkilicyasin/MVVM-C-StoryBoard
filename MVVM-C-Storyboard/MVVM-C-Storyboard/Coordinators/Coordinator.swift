@@ -15,7 +15,7 @@ public protocol Coordinator: AnyObject {
     associatedtype Route: BaseRoute
     var childCoordinators: [any Coordinator] {get set}
     func start()
-    func navigateTo(to route: Route)
+    func navigateTo(to route: Route, data: AnyObject?)
 }
 
 public extension Coordinator {

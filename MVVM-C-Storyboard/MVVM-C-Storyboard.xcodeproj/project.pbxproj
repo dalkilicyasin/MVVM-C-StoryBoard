@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D90214642B7DFE8700BD6195 /* HomeViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90214632B7DFE3600BD6195 /* HomeViewCoordinator.swift */; };
 		D90214652B7DFE8700BD6195 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90214622B7DFE3600BD6195 /* Storyboarded.swift */; };
 		D90214662B7DFE8700BD6195 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90214612B7DFE3600BD6195 /* AppCoordinator.swift */; };
 		D90214672B7DFE9100BD6195 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90214602B7DFE3600BD6195 /* Coordinator.swift */; };
@@ -16,6 +15,8 @@
 		D90CFD662B8CB5DC00F305AF /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90CFD652B8CB5DC00F305AF /* UserListViewModel.swift */; };
 		D90CFD692B8DB66800F305AF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90CFD682B8DB66800F305AF /* NetworkManager.swift */; };
 		D90CFD6B2B8DB68600F305AF /* NetworkProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90CFD6A2B8DB68600F305AF /* NetworkProtocols.swift */; };
+		D9299A3E2B985E7B0025DE57 /* UserListResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9299A3D2B985E7B0025DE57 /* UserListResponseModel.swift */; };
+		D9299A422B99AFDB0025DE57 /* UserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9299A412B99AFDB0025DE57 /* UserListTableViewCell.swift */; };
 		D9BD69152B78D7F20010DF90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD69142B78D7F20010DF90 /* AppDelegate.swift */; };
 		D9BD69192B78D7F20010DF90 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD69182B78D7F20010DF90 /* HomeViewController.swift */; };
 		D9BD691C2B78D7F20010DF90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9BD691A2B78D7F20010DF90 /* Main.storyboard */; };
@@ -25,7 +26,7 @@
 		D9BD69362B78D7F80010DF90 /* MVVM_C_StoryboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD69352B78D7F80010DF90 /* MVVM_C_StoryboardUITests.swift */; };
 		D9BD69382B78D7F80010DF90 /* MVVM_C_StoryboardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD69372B78D7F80010DF90 /* MVVM_C_StoryboardUITestsLaunchTests.swift */; };
 		D9DEB3702B96E99D0028D58F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D9DEB36F2B96E99D0028D58F /* Alamofire */; };
-		D9DEB3722B96F1430028D58F /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DEB3712B96F1430028D58F /* Endpoint.swift */; };
+		D9DEB3722B96F1430028D58F /* NetwokHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DEB3712B96F1430028D58F /* NetwokHelper.swift */; };
 		D9DEB3742B96F3EF0028D58F /* UserListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DEB3732B96F3EF0028D58F /* UserListCoordinator.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,12 +51,13 @@
 		D90214602B7DFE3600BD6195 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		D90214612B7DFE3600BD6195 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		D90214622B7DFE3600BD6195 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
-		D90214632B7DFE3600BD6195 /* HomeViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCoordinator.swift; sourceTree = "<group>"; };
 		D902146C2B7E4A3900BD6195 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
 		D90214712B7E52A400BD6195 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		D90CFD652B8CB5DC00F305AF /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		D90CFD682B8DB66800F305AF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D90CFD6A2B8DB68600F305AF /* NetworkProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocols.swift; sourceTree = "<group>"; };
+		D9299A3D2B985E7B0025DE57 /* UserListResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListResponseModel.swift; sourceTree = "<group>"; };
+		D9299A412B99AFDB0025DE57 /* UserListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewCell.swift; sourceTree = "<group>"; };
 		D9BD69112B78D7F20010DF90 /* MVVM-C-Storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-C-Storyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9BD69142B78D7F20010DF90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9BD69182B78D7F20010DF90 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +70,7 @@
 		D9BD69312B78D7F80010DF90 /* MVVM-C-StoryboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-C-StoryboardUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9BD69352B78D7F80010DF90 /* MVVM_C_StoryboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_C_StoryboardUITests.swift; sourceTree = "<group>"; };
 		D9BD69372B78D7F80010DF90 /* MVVM_C_StoryboardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_C_StoryboardUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D9DEB3712B96F1430028D58F /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		D9DEB3712B96F1430028D58F /* NetwokHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwokHelper.swift; sourceTree = "<group>"; };
 		D9DEB3732B96F3EF0028D58F /* UserListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,7 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				D902145F2B7DFE1100BD6195 /* View */,
-				D90214632B7DFE3600BD6195 /* HomeViewCoordinator.swift */,
 				D90214612B7DFE3600BD6195 /* AppCoordinator.swift */,
 			);
 			path = Home;
@@ -138,7 +139,6 @@
 		D902146A2B7E4A1B00BD6195 /* UserList */ = {
 			isa = PBXGroup;
 			children = (
-				D9DEB36C2B8F5F410028D58F /* Repositories */,
 				D90CFD642B8CB5CA00F305AF /* ViewModel */,
 				D902146E2B7E4A4E00BD6195 /* View */,
 				D9DEB3732B96F3EF0028D58F /* UserListCoordinator.swift */,
@@ -158,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				D902146C2B7E4A3900BD6195 /* UserListViewController.swift */,
+				D9299A412B99AFDB0025DE57 /* UserListTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -183,9 +184,17 @@
 			children = (
 				D90CFD682B8DB66800F305AF /* NetworkManager.swift */,
 				D90CFD6A2B8DB68600F305AF /* NetworkProtocols.swift */,
-				D9DEB3712B96F1430028D58F /* Endpoint.swift */,
+				D9DEB3712B96F1430028D58F /* NetwokHelper.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		D9299A3C2B985E5E0025DE57 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9299A3D2B985E7B0025DE57 /* UserListResponseModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		D9BD69082B78D7F20010DF90 = {
@@ -212,6 +221,7 @@
 		D9BD69132B78D7F20010DF90 /* MVVM-C-Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				D9299A3C2B985E5E0025DE57 /* Models */,
 				D90CFD672B8D26FD00F305AF /* Networking */,
 				D902145C2B7DFDDE00BD6195 /* Coordinators */,
 				D902145B2B7DFDA000BD6195 /* Scenes */,
@@ -239,13 +249,6 @@
 				D9BD69372B78D7F80010DF90 /* MVVM_C_StoryboardUITestsLaunchTests.swift */,
 			);
 			path = "MVVM-C-StoryboardUITests";
-			sourceTree = "<group>";
-		};
-		D9DEB36C2B8F5F410028D58F /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Repositories;
 			sourceTree = "<group>";
 		};
 		D9DEB36E2B96E99D0028D58F /* Frameworks */ = {
@@ -395,16 +398,17 @@
 				D90CFD6B2B8DB68600F305AF /* NetworkProtocols.swift in Sources */,
 				D902146D2B7E4A3900BD6195 /* UserListViewController.swift in Sources */,
 				D90214722B7E52A400BD6195 /* ThirdViewController.swift in Sources */,
-				D9DEB3722B96F1430028D58F /* Endpoint.swift in Sources */,
-				D90214642B7DFE8700BD6195 /* HomeViewCoordinator.swift in Sources */,
+				D9DEB3722B96F1430028D58F /* NetwokHelper.swift in Sources */,
 				D9BD69192B78D7F20010DF90 /* HomeViewController.swift in Sources */,
 				D90CFD692B8DB66800F305AF /* NetworkManager.swift in Sources */,
 				D90214672B7DFE9100BD6195 /* Coordinator.swift in Sources */,
 				D90214662B7DFE8700BD6195 /* AppCoordinator.swift in Sources */,
 				D9BD69152B78D7F20010DF90 /* AppDelegate.swift in Sources */,
+				D9299A422B99AFDB0025DE57 /* UserListTableViewCell.swift in Sources */,
 				D90214652B7DFE8700BD6195 /* Storyboarded.swift in Sources */,
 				D9DEB3742B96F3EF0028D58F /* UserListCoordinator.swift in Sources */,
 				D90CFD662B8CB5DC00F305AF /* UserListViewModel.swift in Sources */,
+				D9299A3E2B985E7B0025DE57 /* UserListResponseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

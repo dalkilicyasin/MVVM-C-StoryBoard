@@ -14,7 +14,10 @@ public enum HomeRoute: BaseRoute {
 }
 
 class AppCoordinator: Coordinator {
-
+    lazy var networkService: NetworkManager = {
+        return NetworkService()
+    }()
+    
     var childCoordinators: [ any Coordinator] = []
     
     var navigationController: UINavigationController
@@ -29,12 +32,12 @@ class AppCoordinator: Coordinator {
         navigationController.setViewControllers([controller], animated: false)
     }
     
-    func navigateTo(to route: HomeRoute) {
+    func navigateTo(to route: HomeRoute, data: AnyObject?) {
         switch route {
         case .second:
             //let viewController = UserListViewController.instantiate(name: .main)
             //navigationController.show(viewController, sender: nil)
-            let userList = UserListCoordinator(navigationController: self.navigationController)
+            let userList = UserListCoordinator(navigationController: self.navigationController, networkManager: networkService)
             userList.userListDelegate = self
             addChildCoordinator(userList)
             userList.start()
@@ -48,7 +51,7 @@ class AppCoordinator: Coordinator {
 
 extension AppCoordinator: UserListDelegate {
     func didFinish(from coordinator: UserListCoordinator) {
-        removeChildCoordinator(coordinator)
+       removeChildCoordinator(coordinator)
     }
 }
 

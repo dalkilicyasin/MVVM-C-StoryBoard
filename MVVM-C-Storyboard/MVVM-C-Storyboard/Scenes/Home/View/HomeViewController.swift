@@ -17,12 +17,12 @@ class HomeViewController: UIViewController, Storyboarded {
     }
 
     @IBAction func toSecondVC(_ sender: Any) {
-        coordinator?.navigateTo(to: .second)
+        coordinator?.navigateTo(to: .second, data: nil)
         
     }
     
     @IBAction func toThirdVC(_ sender: Any) {
-        coordinator?.navigateTo(to: .third)
+        coordinator?.navigateTo(to: .third, data: nil)
     }
 }
 

@@ -20,27 +20,33 @@ protocol UserListDelegate: AnyObject {
 
 public final class UserListCoordinator: Coordinator {
     weak var userListDelegate: UserListDelegate?
+    
 
     public var childCoordinators: [any Coordinator] = []
     
     var navigationController: UINavigationController
+    
+    let networkManager: NetworkManager
    
-    init(navigationController: UINavigationController) {
+    init(navigationController: UINavigationController, networkManager: NetworkManager) {
         self.navigationController = navigationController
+        self.networkManager = networkManager
     }
     
     public func start() {
-        navigateTo(to: .toUserDetail)
+        navigateTo(to: .toMainList, data: nil)
         self.userListDelegate?.didFinish(from: self)
     }
     
-    public func navigateTo(to route: UserListRouter) {
+    public func navigateTo(to route: UserListRouter, data: AnyObject?) {
         switch route {
         case .toUserDetail:
-            print("toDetail")
+            if let userData = data as? UserListResponseModel {
+                print("\(userData.login ?? "")")
+            }
         case .toMainList:
-            print("toMainList")
+            let viewController = UserListViewController.instantiate(name: .main)
+            navigationController.show(viewController, sender: nil)
         }
     }
-    
 }

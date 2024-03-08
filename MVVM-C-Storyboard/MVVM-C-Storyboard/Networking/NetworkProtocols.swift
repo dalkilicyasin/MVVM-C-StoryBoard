@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+/*
 /// Types adopting the `NetworkConfigurable` protocol can be used to safely construct `URLRequest`s.
 public protocol NetworkConfigurable {
     
@@ -28,3 +28,4 @@ public protocol Requestable {
     var queryParams: Encodable? { get }
     var bodyParams: Encodable? { get }
 }
+*/
