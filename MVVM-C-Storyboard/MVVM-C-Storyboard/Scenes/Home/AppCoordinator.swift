@@ -49,7 +49,7 @@ class AppCoordinator: Coordinator {
     }
 }
 
-extension AppCoordinator: UserListDelegate {
+extension AppCoordinator: UserListCoordinatorDelegate {
     func didFinish(from coordinator: UserListCoordinator) {
        removeChildCoordinator(coordinator)
     }

@@ -13,22 +13,22 @@ public enum UserListRouter: BaseRoute {
     case toUserDetail
 }
 
-protocol UserListDelegate: AnyObject {
+protocol UserListCoordinatorDelegate: AnyObject {
     func didFinish(from coordinator: UserListCoordinator)
 }
 
 
 public final class UserListCoordinator: Coordinator {
-    weak var userListDelegate: UserListDelegate?
+    weak var userListDelegate: UserListCoordinatorDelegate?
     
 
     public var childCoordinators: [any Coordinator] = []
     
-    var navigationController: UINavigationController
+    var navigationController: UINavigationController?
     
-    let networkManager: NetworkManager
+    let networkManager: NetworkManager?
    
-    init(navigationController: UINavigationController, networkManager: NetworkManager) {
+    init(navigationController: UINavigationController?, networkManager: NetworkManager?) {
         self.navigationController = navigationController
         self.networkManager = networkManager
     }
@@ -46,7 +46,7 @@ public final class UserListCoordinator: Coordinator {
             }
         case .toMainList:
             let viewController = UserListViewController.instantiate(name: .main)
-            navigationController.show(viewController, sender: nil)
+            navigationController?.show(viewController, sender: nil)
         }
     }
 }

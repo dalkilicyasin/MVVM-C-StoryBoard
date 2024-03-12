@@ -139,6 +139,7 @@
 		D902146A2B7E4A1B00BD6195 /* UserList */ = {
 			isa = PBXGroup;
 			children = (
+				D91A82C42BA0BC3B00FD1611 /* UserListDetail */,
 				D90CFD642B8CB5CA00F305AF /* ViewModel */,
 				D902146E2B7E4A4E00BD6195 /* View */,
 				D9DEB3732B96F3EF0028D58F /* UserListCoordinator.swift */,
@@ -187,6 +188,29 @@
 				D9DEB3712B96F1430028D58F /* NetwokHelper.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		D91A82C42BA0BC3B00FD1611 /* UserListDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D91A82C62BA0BCAB00FD1611 /* View */,
+				D91A82C52BA0BC9B00FD1611 /* ViewModel */,
+			);
+			path = UserListDetail;
+			sourceTree = "<group>";
+		};
+		D91A82C52BA0BC9B00FD1611 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D91A82C62BA0BCAB00FD1611 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D9299A3C2B985E5E0025DE57 /* Models */ = {
