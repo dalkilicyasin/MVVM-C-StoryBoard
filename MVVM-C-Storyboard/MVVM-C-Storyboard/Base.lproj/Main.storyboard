@@ -23,21 +23,22 @@
                                     <constraint firstAttribute="width" constant="200" id="3NU-3s-eYz"/>
                                     <constraint firstAttribute="height" constant="100" id="W2h-hN-aPd"/>
                                 </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="toSecondVC"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GitHub User List"/>
                                 <connections>
                                     <action selector="toSecondVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jgi-uj-dXG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iO9-JE-fCT">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iO9-JE-fCT">
                                 <rect key="frame" x="96.666666666666686" y="483" width="200" height="100"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="BOt-o2-xhU"/>
                                     <constraint firstAttribute="height" constant="100" id="ag0-Th-7H3"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="toThirdVC"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Developer Page"/>
                                 <connections>
                                     <action selector="toThirdVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zyI-3l-azX"/>
                                 </connections>
@@ -53,6 +54,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tNu-af-JXB"/>
+                    <connections>
+                        <outlet property="buttonDeveloper" destination="iO9-JE-fCT" id="D2B-vT-BYM"/>
+                        <outlet property="buttonUserList" destination="J6o-6m-tKl" id="k0o-5s-QUc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

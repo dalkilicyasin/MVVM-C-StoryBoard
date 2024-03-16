@@ -24,7 +24,7 @@ class UserDetailControllerViewController: UIViewController, Storyboarded {
     
     required init?(coder aDecoder: NSCoder) {
         self.viewModel = UserDetailListViewModel()
-        self.coordinator = UserListDetailCoordinator(navigationController: nil)
+        self.coordinator = UserListDetailCoordinator(navigationController: nil, data: nil)
        super.init(coder: aDecoder)
     }
     

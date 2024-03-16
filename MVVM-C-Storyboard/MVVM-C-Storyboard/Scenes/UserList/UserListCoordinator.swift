@@ -39,11 +39,18 @@ public final class UserListCoordinator: Coordinator {
     public func navigateTo(to route: UserListRouter, data: AnyObject?) {
         switch route {
         case .toUserDetail:
-          if let userData = data as? UserListResponseModel {
-              let viewController = UserDetailControllerViewController.instantiate(name: .main)
-              viewController.viewModel.userListResponseModel = userData
-              navigationController?.show(viewController, sender: nil)
-          }
+         // if let userData = data as? UserListResponseModel {
+         //     let viewController = UserDetailControllerViewController.instantiate(name: .main)
+         //     viewController.viewModel.userListResponseModel = userData
+         //     navigationController?.show(viewController, sender: nil)
+         // }
+            
+            
+            
+            let userList = UserListDetailCoordinator(navigationController: self.navigationController, data: data) //TODO: Prefer this one for prevent memory leaks
+            userList.userListDetailDelegate = self
+            addChildCoordinator(userList)
+            userList.start()
     
         case .toMainList:
             let controller = UserListViewController.instantiate(name: .main)
