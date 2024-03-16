@@ -8,8 +8,6 @@
 import Foundation
 import Alamofire
 
-
-
 public protocol NetworkManager {
     func request<T: Codable>(type: T.Type, url: String, methot: HTTPMethods, complation: @escaping(Result<T, ErrorTypes>) -> ())
 }

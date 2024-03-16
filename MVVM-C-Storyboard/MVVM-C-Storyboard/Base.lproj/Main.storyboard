@@ -141,6 +141,63 @@
             </objects>
             <point key="canvasLocation" x="1719.8473282442746" y="-189.43661971830986"/>
         </scene>
+        <!--User Detail Controller View Controller-->
+        <scene sceneID="ubM-hp-jmE">
+            <objects>
+                <viewController storyboardIdentifier="UserDetailControllerViewController" id="AS3-l6-3tT" customClass="UserDetailControllerViewController" customModule="MVVM_C_Storyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c9w-TA-mmE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qhb-I0-YiY">
+                                <rect key="frame" x="62" y="109" width="269" height="176"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="176" id="k9z-qb-NOT"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBN-3g-VoW">
+                                <rect key="frame" x="62" y="373" width="269" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="269" id="aFH-hF-qAn"/>
+                                    <constraint firstAttribute="height" constant="50" id="iZC-Qc-Q8T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UwU-X5-1LH">
+                                <rect key="frame" x="62" y="486" width="269" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="269" id="P4w-S1-LL9"/>
+                                    <constraint firstAttribute="height" constant="64" id="VlF-ON-Cur"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9mq-mv-Bip"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UwU-X5-1LH" firstAttribute="centerX" secondItem="c9w-TA-mmE" secondAttribute="centerX" id="4DO-6i-J9p"/>
+                            <constraint firstItem="9mq-mv-Bip" firstAttribute="trailing" secondItem="qhb-I0-YiY" secondAttribute="trailing" constant="62" id="AoD-wm-dRF"/>
+                            <constraint firstItem="qhb-I0-YiY" firstAttribute="top" secondItem="9mq-mv-Bip" secondAttribute="top" constant="50" id="DCa-Lq-Ifi"/>
+                            <constraint firstItem="qhb-I0-YiY" firstAttribute="leading" secondItem="9mq-mv-Bip" secondAttribute="leading" constant="62" id="dGV-io-F9o"/>
+                            <constraint firstItem="UwU-X5-1LH" firstAttribute="top" secondItem="JBN-3g-VoW" secondAttribute="bottom" constant="63" id="pQt-qB-tBs"/>
+                            <constraint firstItem="JBN-3g-VoW" firstAttribute="centerX" secondItem="c9w-TA-mmE" secondAttribute="centerX" id="qJZ-3g-TD6"/>
+                            <constraint firstItem="JBN-3g-VoW" firstAttribute="top" secondItem="qhb-I0-YiY" secondAttribute="bottom" constant="88" id="um6-Di-hu8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="userImage" destination="qhb-I0-YiY" id="Y2H-v5-Sig"/>
+                        <outlet property="userNameLabel" destination="JBN-3g-VoW" id="dOs-FB-NrW"/>
+                        <outlet property="userTypeLAbel" destination="UwU-X5-1LH" id="4H1-QO-zUM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EdF-pA-qXb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2603.8167938931297" y="-189.43661971830986"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Gwr-2o-Mcq">
             <objects>
@@ -159,20 +216,62 @@
             </objects>
             <point key="canvasLocation" x="-106.10687022900763" y="3.5211267605633805"/>
         </scene>
-        <!--Third View Controller-->
+        <!--Admin Panel View Controller-->
         <scene sceneID="glz-H2-Kw9">
             <objects>
-                <viewController storyboardIdentifier="ThirdViewController" id="ul8-bu-sIF" customClass="ThirdViewController" customModule="MVVM_C_Storyboard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AdminPanelViewController" id="ul8-bu-sIF" customClass="AdminPanelViewController" customModule="MVVM_C_Storyboard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JJf-hF-vxe">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W3n-G5-Na6">
+                                <rect key="frame" x="58.666666666666657" y="152" width="276" height="193"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="193" id="Aeg-6r-a2j"/>
+                                    <constraint firstAttribute="width" constant="276" id="hWv-wJ-8Eq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxK-pB-Klz">
+                                <rect key="frame" x="62" y="441" width="269" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="269" id="baO-zg-1BM"/>
+                                    <constraint firstAttribute="height" constant="50" id="zIM-Qp-W5l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUT-fw-Scv">
+                                <rect key="frame" x="62" y="554" width="269" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="269" id="Xne-qQ-qdx"/>
+                                    <constraint firstAttribute="height" constant="64" id="w7f-J7-i8z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="TEp-8h-I3a"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="BxK-pB-Klz" firstAttribute="centerX" secondItem="JJf-hF-vxe" secondAttribute="centerX" id="0A3-bH-O4c"/>
+                            <constraint firstItem="BxK-pB-Klz" firstAttribute="top" secondItem="W3n-G5-Na6" secondAttribute="bottom" constant="96" id="W2N-5D-pmY"/>
+                            <constraint firstItem="W3n-G5-Na6" firstAttribute="top" secondItem="JJf-hF-vxe" secondAttribute="top" constant="152" id="bgJ-Lm-QbU"/>
+                            <constraint firstItem="W3n-G5-Na6" firstAttribute="centerX" secondItem="JJf-hF-vxe" secondAttribute="centerX" id="gcd-NP-yoZ"/>
+                            <constraint firstItem="dUT-fw-Scv" firstAttribute="top" secondItem="BxK-pB-Klz" secondAttribute="bottom" constant="63" id="ktO-v3-pCg"/>
+                            <constraint firstItem="dUT-fw-Scv" firstAttribute="centerX" secondItem="JJf-hF-vxe" secondAttribute="centerX" id="nFk-9F-WRF"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="adminImage" destination="W3n-G5-Na6" id="bWi-gM-GjJ"/>
+                        <outlet property="nameLabel" destination="BxK-pB-Klz" id="fcT-pC-mgB"/>
+                        <outlet property="typeLabel" destination="dUT-fw-Scv" id="zn3-Ze-V3n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L47-Xr-REZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1720" y="513"/>
+            <point key="canvasLocation" x="1719.8473282442746" y="512.67605633802816"/>
         </scene>
     </scenes>
     <resources>

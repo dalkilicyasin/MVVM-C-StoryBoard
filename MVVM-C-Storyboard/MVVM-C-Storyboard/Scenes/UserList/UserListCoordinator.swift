@@ -17,10 +17,8 @@ protocol UserListCoordinatorDelegate: AnyObject {
     func didFinish(from coordinator: UserListCoordinator)
 }
 
-
 public final class UserListCoordinator: Coordinator {
     weak var userListDelegate: UserListCoordinatorDelegate?
-    
 
     public var childCoordinators: [any Coordinator] = []
     
@@ -34,19 +32,29 @@ public final class UserListCoordinator: Coordinator {
     }
     
     public func start() {
-        navigateTo(to: .toMainList, data: nil)
+        self.navigateTo(to: .toMainList, data: nil)
         self.userListDelegate?.didFinish(from: self)
     }
     
     public func navigateTo(to route: UserListRouter, data: AnyObject?) {
         switch route {
         case .toUserDetail:
-            if let userData = data as? UserListResponseModel {
-                print("\(userData.login ?? "")")
-            }
+          if let userData = data as? UserListResponseModel {
+              let viewController = UserDetailControllerViewController.instantiate(name: .main)
+              viewController.viewModel.userListResponseModel = userData
+              navigationController?.show(viewController, sender: nil)
+          }
+    
         case .toMainList:
-            let viewController = UserListViewController.instantiate(name: .main)
-            navigationController?.show(viewController, sender: nil)
+            let controller = UserListViewController.instantiate(name: .main)
+            controller.coordinator = self
+            navigationController?.show(controller, sender: nil)
         }
+    }
+}
+
+extension UserListCoordinator: UserDetailListCoordinatorDelegate {
+    func didFinish(from coordinator: UserListDetailCoordinator) {
+        removeChildCoordinator(coordinator)
     }
 }

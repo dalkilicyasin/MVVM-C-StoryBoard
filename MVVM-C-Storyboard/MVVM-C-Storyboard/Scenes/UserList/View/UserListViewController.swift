@@ -13,17 +13,14 @@ class UserListViewController: UIViewController, Storyboarded {
     let viewModel: UserListViewModel
     public var coordinator: UserListCoordinator?
     
-    
-    public init(viewModel: UserListViewModel, coordinator: UserListCoordinator? = nil) {
+    public init(viewModel: UserListViewModel) {
         self.viewModel = viewModel
-        self.coordinator = coordinator
         super.init(nibName: nil, bundle: nil)
     }
     
     
     required init?(coder aDecoder: NSCoder) {
         self.viewModel = UserListViewModel()
-        self.coordinator = UserListCoordinator(navigationController: nil, networkManager: nil)
        super.init(coder: aDecoder)
     }
     
@@ -65,7 +62,6 @@ extension UserListViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "UserListTableViewCell") as! UserListTableViewCell
         coordinator?.navigateTo(to: .toUserDetail, data: self.viewModel.userList[indexPath.row])
     }
 }

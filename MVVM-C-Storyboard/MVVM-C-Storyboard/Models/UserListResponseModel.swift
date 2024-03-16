@@ -11,4 +11,5 @@ class UserListResponseModel: Codable {
     let login: String? 
     let type: String?
     let avatar_url: String?
+    let bio: String?
 }

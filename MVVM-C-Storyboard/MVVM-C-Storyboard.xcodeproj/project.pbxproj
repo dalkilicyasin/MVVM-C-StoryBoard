@@ -11,12 +11,16 @@
 		D90214662B7DFE8700BD6195 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90214612B7DFE3600BD6195 /* AppCoordinator.swift */; };
 		D90214672B7DFE9100BD6195 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90214602B7DFE3600BD6195 /* Coordinator.swift */; };
 		D902146D2B7E4A3900BD6195 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D902146C2B7E4A3900BD6195 /* UserListViewController.swift */; };
-		D90214722B7E52A400BD6195 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90214712B7E52A400BD6195 /* ThirdViewController.swift */; };
 		D90CFD662B8CB5DC00F305AF /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90CFD652B8CB5DC00F305AF /* UserListViewModel.swift */; };
 		D90CFD692B8DB66800F305AF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90CFD682B8DB66800F305AF /* NetworkManager.swift */; };
-		D90CFD6B2B8DB68600F305AF /* NetworkProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90CFD6A2B8DB68600F305AF /* NetworkProtocols.swift */; };
+		D91A82C82BA1787500FD1611 /* UserDetailControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A82C72BA1787500FD1611 /* UserDetailControllerViewController.swift */; };
+		D91A82CA2BA1796100FD1611 /* UserDetailListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A82C92BA1796100FD1611 /* UserDetailListViewModel.swift */; };
+		D91A82CC2BA183FB00FD1611 /* UserListDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A82CB2BA183FB00FD1611 /* UserListDetailCoordinator.swift */; };
 		D9299A3E2B985E7B0025DE57 /* UserListResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9299A3D2B985E7B0025DE57 /* UserListResponseModel.swift */; };
 		D9299A422B99AFDB0025DE57 /* UserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9299A412B99AFDB0025DE57 /* UserListTableViewCell.swift */; };
+		D93136E12BA57569000E5A10 /* AdminPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93136E02BA57569000E5A10 /* AdminPanelViewController.swift */; };
+		D93136E42BA59CE5000E5A10 /* AdminPanelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93136E32BA59CE5000E5A10 /* AdminPanelViewModel.swift */; };
+		D93136E62BA5B24C000E5A10 /* AdminPanelCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93136E52BA5B24C000E5A10 /* AdminPanelCoordinator.swift */; };
 		D9BD69152B78D7F20010DF90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD69142B78D7F20010DF90 /* AppDelegate.swift */; };
 		D9BD69192B78D7F20010DF90 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BD69182B78D7F20010DF90 /* HomeViewController.swift */; };
 		D9BD691C2B78D7F20010DF90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9BD691A2B78D7F20010DF90 /* Main.storyboard */; };
@@ -52,12 +56,16 @@
 		D90214612B7DFE3600BD6195 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		D90214622B7DFE3600BD6195 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		D902146C2B7E4A3900BD6195 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
-		D90214712B7E52A400BD6195 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		D90CFD652B8CB5DC00F305AF /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		D90CFD682B8DB66800F305AF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		D90CFD6A2B8DB68600F305AF /* NetworkProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocols.swift; sourceTree = "<group>"; };
+		D91A82C72BA1787500FD1611 /* UserDetailControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailControllerViewController.swift; sourceTree = "<group>"; };
+		D91A82C92BA1796100FD1611 /* UserDetailListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailListViewModel.swift; sourceTree = "<group>"; };
+		D91A82CB2BA183FB00FD1611 /* UserListDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListDetailCoordinator.swift; sourceTree = "<group>"; };
 		D9299A3D2B985E7B0025DE57 /* UserListResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListResponseModel.swift; sourceTree = "<group>"; };
 		D9299A412B99AFDB0025DE57 /* UserListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewCell.swift; sourceTree = "<group>"; };
+		D93136E02BA57569000E5A10 /* AdminPanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPanelViewController.swift; sourceTree = "<group>"; };
+		D93136E32BA59CE5000E5A10 /* AdminPanelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPanelViewModel.swift; sourceTree = "<group>"; };
+		D93136E52BA5B24C000E5A10 /* AdminPanelCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPanelCoordinator.swift; sourceTree = "<group>"; };
 		D9BD69112B78D7F20010DF90 /* MVVM-C-Storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-C-Storyboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9BD69142B78D7F20010DF90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9BD69182B78D7F20010DF90 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -103,7 +111,7 @@
 		D902145B2B7DFDA000BD6195 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				D902146B2B7E4A2500BD6195 /* Third */,
+				D902146B2B7E4A2500BD6195 /* AdminPanel */,
 				D902146A2B7E4A1B00BD6195 /* UserList */,
 				D902145D2B7DFDF600BD6195 /* Home */,
 			);
@@ -147,12 +155,14 @@
 			path = UserList;
 			sourceTree = "<group>";
 		};
-		D902146B2B7E4A2500BD6195 /* Third */ = {
+		D902146B2B7E4A2500BD6195 /* AdminPanel */ = {
 			isa = PBXGroup;
 			children = (
+				D93136E22BA59CCA000E5A10 /* ViewModel */,
 				D90214702B7E527900BD6195 /* View */,
+				D93136E52BA5B24C000E5A10 /* AdminPanelCoordinator.swift */,
 			);
-			path = Third;
+			path = AdminPanel;
 			sourceTree = "<group>";
 		};
 		D902146E2B7E4A4E00BD6195 /* View */ = {
@@ -167,7 +177,7 @@
 		D90214702B7E527900BD6195 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D90214712B7E52A400BD6195 /* ThirdViewController.swift */,
+				D93136E02BA57569000E5A10 /* AdminPanelViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -184,7 +194,6 @@
 			isa = PBXGroup;
 			children = (
 				D90CFD682B8DB66800F305AF /* NetworkManager.swift */,
-				D90CFD6A2B8DB68600F305AF /* NetworkProtocols.swift */,
 				D9DEB3712B96F1430028D58F /* NetwokHelper.swift */,
 			);
 			path = Networking;
@@ -195,6 +204,7 @@
 			children = (
 				D91A82C62BA0BCAB00FD1611 /* View */,
 				D91A82C52BA0BC9B00FD1611 /* ViewModel */,
+				D91A82CB2BA183FB00FD1611 /* UserListDetailCoordinator.swift */,
 			);
 			path = UserListDetail;
 			sourceTree = "<group>";
@@ -202,6 +212,7 @@
 		D91A82C52BA0BC9B00FD1611 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				D91A82C92BA1796100FD1611 /* UserDetailListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -209,6 +220,7 @@
 		D91A82C62BA0BCAB00FD1611 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D91A82C72BA1787500FD1611 /* UserDetailControllerViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -219,6 +231,14 @@
 				D9299A3D2B985E7B0025DE57 /* UserListResponseModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D93136E22BA59CCA000E5A10 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D93136E32BA59CE5000E5A10 /* AdminPanelViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		D9BD69082B78D7F20010DF90 = {
@@ -419,15 +439,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D90CFD6B2B8DB68600F305AF /* NetworkProtocols.swift in Sources */,
 				D902146D2B7E4A3900BD6195 /* UserListViewController.swift in Sources */,
-				D90214722B7E52A400BD6195 /* ThirdViewController.swift in Sources */,
+				D91A82CA2BA1796100FD1611 /* UserDetailListViewModel.swift in Sources */,
+				D91A82C82BA1787500FD1611 /* UserDetailControllerViewController.swift in Sources */,
+				D91A82CC2BA183FB00FD1611 /* UserListDetailCoordinator.swift in Sources */,
 				D9DEB3722B96F1430028D58F /* NetwokHelper.swift in Sources */,
 				D9BD69192B78D7F20010DF90 /* HomeViewController.swift in Sources */,
 				D90CFD692B8DB66800F305AF /* NetworkManager.swift in Sources */,
 				D90214672B7DFE9100BD6195 /* Coordinator.swift in Sources */,
 				D90214662B7DFE8700BD6195 /* AppCoordinator.swift in Sources */,
+				D93136E62BA5B24C000E5A10 /* AdminPanelCoordinator.swift in Sources */,
 				D9BD69152B78D7F20010DF90 /* AppDelegate.swift in Sources */,
+				D93136E12BA57569000E5A10 /* AdminPanelViewController.swift in Sources */,
+				D93136E42BA59CE5000E5A10 /* AdminPanelViewModel.swift in Sources */,
 				D9299A422B99AFDB0025DE57 /* UserListTableViewCell.swift in Sources */,
 				D90214652B7DFE8700BD6195 /* Storyboarded.swift in Sources */,
 				D9DEB3742B96F3EF0028D58F /* UserListCoordinator.swift in Sources */,

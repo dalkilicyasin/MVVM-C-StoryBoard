@@ -43,8 +43,10 @@ class AppCoordinator: Coordinator {
             userList.start()
             
         case .third:
-            let viewController = ThirdViewController.instantiate(name: .main)
-            navigationController.show(viewController, sender: nil)
+            let adminInfo = AdminPanelCoordinator(navigationController: self.navigationController)
+            adminInfo.adminPanelCoordinatorDelegate = self
+            addChildCoordinator(adminInfo)
+            adminInfo.start()
         }
     }
 }
@@ -55,5 +57,10 @@ extension AppCoordinator: UserListCoordinatorDelegate {
     }
 }
 
+extension AppCoordinator: AdminPanelCoordinatorDelegate {
+    func didFinish(from coordinator: AdminPanelCoordinator) {
+       removeChildCoordinator(coordinator)
+    }
+}
 
 
