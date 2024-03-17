@@ -19,13 +19,13 @@ protocol UserListCoordinatorDelegate: AnyObject {
 
 public final class UserListCoordinator: Coordinator {
     weak var userListDelegate: UserListCoordinatorDelegate?
-
+    
     public var childCoordinators: [any Coordinator] = []
     
     var navigationController: UINavigationController?
     
     let networkManager: NetworkManager?
-   
+    
     init(navigationController: UINavigationController?, networkManager: NetworkManager?) {
         self.navigationController = navigationController
         self.networkManager = networkManager
@@ -39,19 +39,18 @@ public final class UserListCoordinator: Coordinator {
     public func navigateTo(to route: UserListRouter, data: AnyObject?) {
         switch route {
         case .toUserDetail:
-         // if let userData = data as? UserListResponseModel {
-         //     let viewController = UserDetailControllerViewController.instantiate(name: .main)
-         //     viewController.viewModel.userListResponseModel = userData
-         //     navigationController?.show(viewController, sender: nil)
-         // }
+            // if let userData = data as? UserListResponseModel {
+            //     let viewController = UserDetailControllerViewController.instantiate(name: .main)
+            //     viewController.viewModel.userListResponseModel = userData
+            //     navigationController?.show(viewController, sender: nil)
+            // }
             
-            
-            
-            let userList = UserListDetailCoordinator(navigationController: self.navigationController, data: data) //TODO: Prefer this one for prevent memory leaks
+            //TODO: Prefer this one for prevent memory leaks
+            let userList = UserListDetailCoordinator(navigationController: self.navigationController, data: data)
             userList.userListDetailDelegate = self
             addChildCoordinator(userList)
             userList.start()
-    
+            
         case .toMainList:
             let controller = UserListViewController.instantiate(name: .main)
             controller.coordinator = self
