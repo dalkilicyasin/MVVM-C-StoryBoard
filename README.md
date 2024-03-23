@@ -1,4 +1,4 @@
-![githubgifnenew](https://github.com/dalkilicyasin/MVVM-C-StoryBoard/assets/72190310/677634f9-64ad-40d5-8913-02cfbe9bea24)# MVVM-C Storyboard 
+# MVVM-C Storyboard 
 
 * Created simple project for developer if they want to use MCCM-C with Storyboard Coordinator Desing Pattern. And aslo combined with Alamofire Library for data parsing.
 * Wanted to show how to use Storyboard in MVVM-C Coordinator Desing Pattern and Alamofire Library HTTP request.
