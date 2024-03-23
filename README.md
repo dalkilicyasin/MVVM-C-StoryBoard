@@ -188,3 +188,5 @@ class HomeViewController: UIViewController, Storyboarded {
 }
 
 ```
+## Get in touch
+I am always open to constructive suggestions and feedback. You can find me at [LinkedIn](https://www.linkedin.com/in/dalkilicyasin/), [Stack Overflow](https://stackoverflow.com/users/14761798/yasin89)or you can contact me ysndlklc1989@icloud.com
