@@ -36,7 +36,7 @@ Alamofire simplifies networking tasks by providing a clear and concise API for m
 ## Demo
 
 
-![Uploading Githubgif2.gif…]()
+![](http://i.imgur.com/OUkLi.gif)
 
 
 ## Implementation
