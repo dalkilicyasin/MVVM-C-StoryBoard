@@ -35,8 +35,9 @@ Alamofire simplifies networking tasks by providing a clear and concise API for m
 
 ## Demo
 
+![smallgif](https://github.com/dalkilicyasin/MVVM-C-StoryBoard/assets/72190310/b6371846-7741-4886-9448-8f31d596bfb6)
 
-![](http://i.imgur.com/OUkLi.gif)
+
 
 
 ## Implementation
