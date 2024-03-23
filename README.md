@@ -34,6 +34,7 @@ Alamofire simplifies networking tasks by providing a clear and concise API for m
 * Reusability: Components such as ViewModels and Coordinators can be reused across different parts of the application, reducing duplication of code and promoting consistency.
 
 ## Demo
+
 ![Uploading GifGithub.gif…]()
 
 
