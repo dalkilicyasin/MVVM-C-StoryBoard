@@ -1,5 +1,5 @@
 # MVVM-C Storyboard 
-
+![githubgifnenew](https://github.com/dalkilicyasin/MVVM-C-StoryBoard/assets/72190310/92c8d392-c1e3-4b1f-9dbd-a3dbd478d9f4)
 * Created simple project for developer if they want to use MCCM-C with Storyboard Coordinator Desing Pattern. And aslo combined with Alamofire Library for data parsing.
 * Wanted to show how to use Storyboard in MVVM-C Coordinator Desing Pattern and Alamofire Library HTTP request.
 * Also you can use URLSession for HTTP request. This has been shown in this project. This optional and you can use easly.
