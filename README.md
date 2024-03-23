@@ -33,6 +33,9 @@ Alamofire simplifies networking tasks by providing a clear and concise API for m
 * Scalability: MVVM-C scales well with the size and complexity of the application. It allows for easy addition of new features and modification of existing ones without introducing tight coupling.
 * Reusability: Components such as ViewModels and Coordinators can be reused across different parts of the application, reducing duplication of code and promoting consistency.
 
+## Demo
+![Uploading GifGithub.gif…]()
+
 
 ## Implementation
 
