@@ -12,6 +12,29 @@ MVVM-C (Model-View-ViewModel-Coordinator) is a design pattern widely used in iOS
 ### Steps
 Firstly you need to create window from AppDelegate then remove SceneDelegate File. After go to Info file from target. Remove 'Application Scene Manifest'. Created window instance must be rootviewcontroller. You can check AppDelegate file in project and i shown below.
 
+```swift
+import UIKit
+
+@main
+class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var window: UIWindow?
+    var appCoordinator: AppCoordinator?
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        let navigationController = UINavigationController()
+        appCoordinator = AppCoordinator(navigationController: navigationController)
+        appCoordinator?.start()
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+        
+        return true
+    }
+}
+```
+
 ## Components
 
 ## Model
