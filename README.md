@@ -9,6 +9,9 @@
 
 MVVM-C (Model-View-ViewModel-Coordinator) is a design pattern widely used in iOS/macOS development to achieve separation of concerns, modularity, and maintainability. Alamofire is a powerful Swift-based HTTP networking library for handling networking tasks in iOS/macOS applications. Integrating MVVM-C with Alamofire and Storyboard-based navigation allows for a structured and efficient development process.
 
+### Steps
+Firstly you need to create window from AppDelegate then remove SceneDelegate File. After go to Info file from target. Remove 'Application Scene Manifest'. Created window instance must be rootviewcontroller. You can check AppDelegate file in project and i shown below.
+
 ## Components
 
 ## Model
